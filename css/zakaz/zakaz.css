@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 30px 10%;
+    background: #303841;
+    color: #E3E4E5;
+    align-items: center;
+    justify-items: center;
+    font-size: 25px;
+
+}
+
+header nav ul li:last-child {
+    -webkit-text-stroke: 1px #ffffff;
+}
+
+header nav ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 100px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+main aside nav ul li a {
+    -webkit-text-stroke: 0.19px #000000
+}
+
+
+
+.parallelogram {
+    position: relative;
+    left: 168px;
+    width: 1650px;
+    padding: 0 4%;
+    margin-right: 96px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    /* цвет текста, забивки и т. п. */
+}
+
+.parallelogram::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: #D9D9D9;
+    transform: skew(-45deg);
+
+}
+
+h1 {
+    padding: 0 10%;
+    color: red;
+    font-size: 32px;
+    -webkit-text-stroke: 0.9px #000000
+}
+
+.poisk {
+    position: relative;
+    height: 100px;
+    width: 520px;
+    padding: 10px 10%;
+    margin-right: 200px;
+    display: grid;
+    grid-template-columns: auto;
+
+    /* цвет текста, забивки и т. п. */
+}
+
+.poisk::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: #EEEEEE;
+    transform: skew(-45deg);
+}
+
+input {
+    position: relative;
+    margin: 40px;
+    padding: 0 10%;
+    height: 35px;
+    background-color: #EEEEEE;
+}
+
+.poisk form a {
+    margin: auto;
+}
+
+.card {
+    position: relative;
+    width: 128px;
+    height: 60px;
+    padding: 2% 10%;
+    margin-right: 150px;
+    /* цвет текста, забивки и т. п. */
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: #D72323;
+    transform: skew(-45deg);
+    border-radius: 9%;
+}
+
+.poisk form input {
+    border: none;
+    outline: none;
+    width: auto;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    padding: 60px 5%;
+}
+
+main ul {
+    display: grid;
+    grid-template-columns: 200px;
+    grid-template-rows: repeat(10, 40px);
+    row-gap: 18px;
+}
+
+main ul li {
+    display: grid;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 300px;
+    height: 5vh;
+    text-align: center;
+    background-color: #303841;
+
+}
+
+main ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+main h1 {
+    color: #FFFFFF;
+    font-size: 32px;
+    padding: 60px 0 50px 0;
+    -webkit-text-stroke: 0.5px #ffffff;
+    padding: auto;
+}
+
+.setka h2 {
+    -webkit-text-stroke: 1px #000000;
+    font-size: 32px;
+    padding-left: 25px;
+}
+
+.one {
+    margin-right: 100px;
+}
+
+section.image {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 500px;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid white;
+}
+
+.setka {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 40px;
+    row-gap: 90px;
+    grid-column: 2;
+    margin-top: 25px;
+}
+
+.setka div {
+    display: grid;
+    grid-template-columns: 1fr;
+    color: white;
+    border: 1px solid red;
+    background-color: #3A4750;
+}
+
+.setka div p {
+    padding: 10px;
+}
+
+.setka div img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.whells {
+    display: grid;
+    grid-template-rows: 210px;
+    grid-column: 1/4;
+}
+
+.whells img {
+    position: relative;
+    opacity: 0.5;
+}
+
+.whells .text_whell {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    padding-top: 5vh;
+    width: 500px;
+}
+
+.whells .text_whell .button {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    color: #000000;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    height: 35px;
+    margin: 10px;
+
+}
+
+.whells .text_whell .button a {
+    text-decoration: none;
+    color: #000;
+
+
+}
+
+.stroka h2 {
+    font-size: 25px;
+    top: 25px;
+    -webkit-text-stroke: 0.010px #ffffff;
+    padding: 5px;
+    margin: 3px;
+
+
+}
+
+.stroka {
+    position: absolute;
+    width: 460px;
+    height: 51px;
+    left: 300px;
+    padding: 3px;
+    border-radius: 0 40px 40px 0;
+}
+
+footer {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2% 10%;
+    justify-items: center;
+    width: 100%;
+    background-color: #303841;
+    border-top: 1.5px solid #D72323;
+
+
+}
+
+footer ul {
+    display: grid;
+    row-gap: 20px;
+    list-style-type: none;
+}
+
+footer ul li a {
+    font-size: 17px;
+    text-decoration: none;
+    color: #FFFFFF;
+    -webkit-text-stroke: 0.39px #000000;
+}
+
+footer ul:last-child {
+    text-align: center;
+}
+
+footer ul:last-child li:last-child>a {
+    border: 1px solid #D72323;
+    background-color: #D72323;
+    border-radius: 25px;
+    padding: 12px;
+}
+
+footer ul:nth-child(2) li>a {
+    font-size: 20px;
+    -webkit-text-stroke: 0.020px #ffffff;
+
+}
